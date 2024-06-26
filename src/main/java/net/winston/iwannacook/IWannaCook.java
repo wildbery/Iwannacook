@@ -5,6 +5,8 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static net.winston.iwannacook.item.ModItems.registerModItems;
+
 public class IWannaCook implements ModInitializer {
 
 	public static final String MOD_ID = "i-wanna-cook";
@@ -19,6 +21,6 @@ public class IWannaCook implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
+		registerModItems();
 	}
 }
